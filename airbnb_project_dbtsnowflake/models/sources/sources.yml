@@ -1,0 +1,9 @@
+sources:
+  - name: staging_source
+    database: AIRBNB
+    schema: staging
+    tables:
+      - name: listings # enabled
+      - name: bookings # enabled
+      - name: hosts # enabled
+
