@@ -65,7 +65,7 @@ AWS_DBT_Snowflake/
 │   └── listings.csv
 │
 ├── DDL/                                # Database schema definitions
-│   ├── ddl.sql                         # Table creation scripts
+│   ├── snowquery_ddl.sql                         # Table creation scripts
 │   └── resources.sql
 │
 └── aws_dbt_snowflake_project/         # Main dbt project
@@ -84,8 +84,8 @@ AWS_DBT_Snowflake/
     │   │   ├── silver_hosts.sql
     │   │   └── silver_listings.sql
     │   └── gold/                       # Analytics layer
-    │       ├── fact.sql
-    │       ├── obt.sql
+    │       ├── gold_fact.sql
+    │       ├── gold_obt.sql
     │       └── ephemeral/              # Temporary models
     │           ├── bookings.sql
     │           ├── hosts.sql
@@ -108,7 +108,7 @@ AWS_DBT_Snowflake/
     │   └── dim_listings.yml
     │
     ├── tests/                          # Data quality tests
-    │   └── source_tests.sql
+    │   └── testing_source.sql
     │
     └── seeds/                          # Static reference data
 ```
@@ -191,3 +191,4 @@ AWS_DBT_Snowflake/
 ## Author
 
 Utsav D Kanani
+
